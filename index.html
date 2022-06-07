@@ -8,9 +8,93 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    .bckground {
+        background-image: linear-gradient(-45deg, hsl(233, 47%, 5%), hsl(233, 47%, 20%), hsl(233, 47%, 35%), hsl(233, 47%, 20%), hsl(233, 47%, 7%));
+        background-size: 400% 400%;
+        font-family: 'Outfit', sans-serif;
+        animation: change 7s ease-in-out infinite;
+        /* border: 1px solid red; */
+    }
 
-<body>
-    <h1 class="text-red-500">hello</h1>
+    @keyframes change {
+        0% {
+            background-position: 0 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0 50%;
+        }
+    }
+</style>
+
+<body class="bg-cal-grey bckground">
+    <section>
+        <div class=" bg-bookmark-white py-20 mt-20 lg:mt-20 ">
+            <div class=" container sm:mx-auto ">
+                <div class=" container mx-auto sm:w-4/12">
+                    <h1 class=" text-4xl lg:text-5xl text-center text-black font-outfit font-bold">CALCULATOR</h1>
+                    <div class="container mx-auto bg-transparent">
+                        <input type="text" placeholder="0" class="w-full p-10 text-2xl py-4 px-3 outline-none rounded-md
+                             text-right placeholder:text-black" disabled>
+                        <div class="grid grid-cols-4 grid-row-5 gap-2 mt-2">
+                            <!-- Row 1 -->
+                            <!-- AC -->
+                            <button
+                                class="btn  justify-center text-lg bg-cal-blue p-10 col-span-1 text-center font-semibold">AC</button>
+                            <!-- Delete -->
+                            <button class="btn clear justify-center text-lg bg-cal-blue p-10 col-span-1 text-center"><i
+                                    class="fa-solid fa-delete-left"></i></button>
+                            <!-- Divide -->
+                            <button class="btn div justify-center text-lg bg-cal-blue p-10 col-span-1 text-center"><i
+                                    class="fa-solid fa-divide"></i></button>
+                            <!-- Multiply -->
+                            <button class="btn justify-center text-lg bg-cal-blue p-10 col-span-1 text-center"><i
+                                    class="fa-solid fa-xmark"></i></button>
+                            <!-- Row 2 -->
+                            <button
+                                class="num btn justify-center text-lg bg-cal-black p-10 col-span-1 text-center">7</button>
+                            <button
+                                class="num btn justify-center text-lg bg-cal-black p-10 col-span-1 text-center">8</button>
+                            <button
+                                class="num btn justify-center text-lg bg-cal-black p-10 col-span-1 text-center">9</button>
+                            <button class="btn justify-center text-lg bg-cal-blue p-10 col-span-1 text-center"><i
+                                    class="fa-solid fa-minus"></i></button>
+                            <!-- Row 3 -->
+                            <button
+                                class="num btn justify-center text-lg bg-cal-black p-10 col-span-1 text-center">4</button>
+                            <button
+                                class="num btn justify-center text-lg bg-cal-black p-10 col-span-1 text-center">5</button>
+                            <button
+                                class="num btn justify-center text-lg bg-cal-black p-10 col-span-1 text-center">6</button>
+                            <button id="add"
+                                class="btn justify-center text-lg bg-cal-blue p-10 col-span-1 text-center"><i
+                                    class="fa-solid fa-plus"></i></button>
+                            <!-- Row 4 -->
+                            <button
+                                class="num btn justify-center text-lg bg-cal-black p-10 col-span-1 text-center">1</button>
+                            <button
+                                class="num btn justify-center text-lg bg-cal-black p-10 col-span-1 text-center">2</button>
+                            <button
+                                class="num btn justify-center text-lg bg-cal-black p-10 col-span-1 text-center">3</button>
+                            <button class="btn justify-center text-lg bg-cal-blue p-10 row-span-2  text-center"><i
+                                    class="fa-solid fa-equals"></i></button>
+                            <!-- Row 5 -->
+                            <button
+                                class="num btn justify-center text-lg bg-cal-black p-10 col-span-3 text-center">0</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src=" https://kit.fontawesome.com/2317381351.js" crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>

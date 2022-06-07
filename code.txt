@@ -1,0 +1,39 @@
+<h1 class="text-7xl text-black">CALCULATOR</h1>
+        <div class=" w-96 h-10/12 bg-transparent">
+            <input type="text" placeholder="0"
+                class="btn w-full h-10 text-2xl py-4 px-3 outline-none rounded-md text-right">
+            <div class="grid grid-cols-4 grid-row-5 gap-2 mt-2">
+                <!-- Row 1 -->
+                <button
+                    class="btn justify-center text-lg bg-cal-blue h-10 col-span-1 text-center font-semibold">AC</button>
+                <button class="btn justify-center text-lg bg-cal-blue h-10 col-span-1 text-center"><i
+                        class="fa-solid fa-delete-left"></i></button>
+                <button class="btn justify-center text-lg bg-cal-blue h-10 col-span-1 text-center"><i
+                        class="fa-solid fa-divide"></i></button>
+                <button class="btn justify-center text-lg bg-cal-blue h-10 col-span-1 text-center"><i
+                        class="fa-solid fa-xmark"></i></button>
+                <!-- Row 2 -->
+                <button class="num btn justify-center text-lg bg-cal-black h-10 col-span-1 text-center">7</button>
+                <button class="num btn justify-center text-lg bg-cal-black h-10 col-span-1 text-center">8</button>
+                <button class="num btn justify-center text-lg bg-cal-black h-10 col-span-1 text-center">9</button>
+                <button class="btn justify-center text-lg bg-cal-blue h-10 col-span-1 text-center"><i
+                        class="fa-solid fa-minus"></i></button>
+                <!-- Row 3 -->
+                <button class="num btn justify-center text-lg bg-cal-black h-10 col-span-1 text-center">4</button>
+                <button class="num btn justify-center text-lg bg-cal-black h-10 col-span-1 text-center">5</button>
+                <button class="num btn justify-center text-lg bg-cal-black h-10 col-span-1 text-center">6</button>
+                <button class="btn justify-center text-lg bg-cal-blue h-10 col-span-1 text-center"><i
+                        class="fa-solid fa-plus"></i></button>
+                <!-- Row 4 -->
+                <button class="num btn justify-center text-lg bg-cal-black h-10 col-span-1 text-center">1</button>
+                <button class="num btn justify-center text-lg bg-cal-black h-10 col-span-1 text-center">2</button>
+                <button class="num btn justify-center text-lg bg-cal-black h-10 col-span-1 text-center">3</button>
+                <button class="btn justify-center text-lg bg-cal-blue h-10 row-span-2  text-center"><i
+                        class="fa-solid fa-equals"></i></button>
+                <!-- Row 5 -->
+                <button
+                    class="num btn justify-center text-lg bg-cal-black h-10 col-start-2 col-span-1 text-center">0</button>
+
+
+            </div>
+        </div>
