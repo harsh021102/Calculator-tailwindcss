@@ -5,17 +5,13 @@ const buttons = document.querySelectorAll('.btn')
 function addSymbol(sym){
     let num = output.value
     const len = num.length
-    // console.log(num)
-    // console.log(num.length)
     if(num==="")
-    output.value ='0' + sym
-    else if(num[len-1]==="+"||num[len-1]==="-"||num[len-1]==="/"||num[len-1]==="x")
+        output.value ='0' + sym
+    else if(num[len-1]==="+"||num[len-1]==="-"||num[len-1]==="/"||num[len-1]==="*")
     {
-        console.log(sym)
         num = num.slice(0, -1);
         num=num+sym
         output.value=num
-        console.log("last:",num)
     }
     else
     {
@@ -67,6 +63,41 @@ buttons.forEach(function(btn){
             {
                 if(output.value !== "")
                     output.value=output.value+ '0'
+            }
+            else if(btn.innerHTML==='.')
+            {
+                let num = output.value,flag=0;
+                const len = num.length;
+                for(let i=len-1;i>=0;i--)
+                {
+                    // console.log(i)
+                    if(num[i]==="+"||num[i]==="-"||num[i]==="/"||num[i]==="x")
+                        break;
+                    if(num[i]===".") //point is already present
+                    {
+                        flag=1;
+                        console.log("i value:",i,num[i])
+                        console.log("char is:",num[i])
+                    }
+                }
+                if(flag===0)
+                {
+                    if(output.value==="")
+                    {
+                        output.value="0"+".";
+                        console.log("pp")
+                    }
+                    else if(num[len-1]==="+"||num[len-1]==="-"||num[len-1]==="/"||num[len-1]==="x")
+                    {
+                        console.log("h")
+                        output.value+="0"+".";
+                    }
+                    else
+                    {
+                        output.value=output.value+".";
+                        console.log("hp")
+                    }    
+                }   
             }
             else{
                 console.log(btn.innerHTML)

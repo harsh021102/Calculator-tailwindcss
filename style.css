@@ -510,6 +510,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: span 3 / span 3;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -519,12 +523,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
 }
 
 .grid {
@@ -593,6 +615,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.75rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -601,8 +633,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: right;
 }
 
-.font-outfit {
-  font-family: Outfit, sans-serif;
+.font-boldy {
+  font-family: Alfa Slab One, cursive;
 }
 
 .text-4xl {
@@ -628,9 +660,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
-.text-black {
+.text-cal-head {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: hsl(233 47% 20% / var(--tw-text-opacity));
 }
 
 .outline-none {
@@ -642,9 +674,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Outfit:wght@900&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Outfit:wght@900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
 .btn {
   display: flex;
@@ -692,6 +724,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:w-4\/12 {
     width: 33.333333%;
+  }
+
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
