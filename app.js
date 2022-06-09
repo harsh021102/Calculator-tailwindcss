@@ -13,6 +13,10 @@ function addSymbol(sym){
         num=num+sym
         output.value=num
     }
+    else if(num[len-1]===".")
+    {
+
+    }
     else
     {
         output.value += sym
@@ -71,7 +75,7 @@ buttons.forEach(function(btn){
                 for(let i=len-1;i>=0;i--)
                 {
                     // console.log(i)
-                    if(num[i]==="+"||num[i]==="-"||num[i]==="/"||num[i]==="x")
+                    if(num[i]==="+"||num[i]==="-"||num[i]==="/"||num[i]==="*")
                         break;
                     if(num[i]===".") //point is already present
                     {
